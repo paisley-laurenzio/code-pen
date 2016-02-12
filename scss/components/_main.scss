@@ -1,0 +1,22 @@
+html {
+    font-family: $helvetica;
+}
+
+.border {
+    border: 1px solid #ccc;
+    p{
+        color: red;
+    }
+}
+
+ul{
+    @extend.border;
+}
+
+a {
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
