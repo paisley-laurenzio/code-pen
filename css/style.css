@@ -20,6 +20,7 @@ body {
   background-image: url("../img/image1.jpg");
   background-repeat: no-repeat;
   background-attachment: absolute;
+  overflow: hidden;
 }
 
 .tooltip:hover span {
@@ -46,7 +47,7 @@ body {
   width: 240px;
   top: -50em;
   /*-- this is the original position of the tooltip when it's hidden */
-  left: 20em;
+  left: 31px;
   margin-left: 0;
   /*-- set opacity to 0 otherwise our animations won't work */
   opacity: 0;
@@ -65,11 +66,13 @@ body {
   content: "";
   display: block;
   left: 31px;
-  position: absolute;
   width: 240px;
 }
 
 img {
-  left: 29;
-  display: inline-block;
+  left: 29px;
+}
+
+.header {
+  text-align: center;
 }
