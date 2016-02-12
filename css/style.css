@@ -19,15 +19,14 @@ body {
 .box {
   background-image: url("../img/image1.jpg");
   background-repeat: no-repeat;
-  background-attachment: absolute;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .tooltip:hover span {
   opacity: 1;
   filter: alpha(opacity=100);
   top: 0em;
-  left: 20em;
   z-index: 99;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -38,16 +37,9 @@ body {
 .tooltip span {
   background: none repeat scroll 0 0;
   /*-- some basic styling */
-  color: #fff;
-  font-family: 'Helvetica';
-  font-size: 0.8em;
-  font-weight: normal;
-  line-height: 1.5em;
-  padding: 16px 15px;
-  width: 240px;
-  top: -50em;
+  width: 100%;
+  top: -100em;
   /*-- this is the original position of the tooltip when it's hidden */
-  left: 31px;
   margin-left: 0;
   /*-- set opacity to 0 otherwise our animations won't work */
   opacity: 0;
@@ -65,8 +57,7 @@ body {
   bottom: -15px;
   content: "";
   display: block;
-  left: 31px;
-  width: 240px;
+  width: 100%;
 }
 
 img {
